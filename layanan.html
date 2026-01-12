@@ -51,6 +51,39 @@
         </div>
     </div>
 
+    <!-- Guide Section -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row text-center g-4">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <span class="badge bg-primary rounded-pill px-3 py-2 me-2">1</span>
+                                <h6 class="fw-bold mb-0">Isi Data Diri</h6>
+                            </div>
+                            <p class="text-muted small mb-0">Lengkapi identitas valid sesuai KTP.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <span class="badge bg-primary rounded-pill px-3 py-2 me-2">2</span>
+                                <h6 class="fw-bold mb-0">Pilih Layanan</h6>
+                            </div>
+                            <p class="text-muted small mb-0">Pilih kategori bantuan yang sesuai.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <span class="badge bg-primary rounded-pill px-3 py-2 me-2">3</span>
+                                <h6 class="fw-bold mb-0">Tunggu Verifikasi</h6>
+                            </div>
+                            <p class="text-muted small mb-0">Pantau status pada tabel riwayat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Main Section -->
     <section class="py-5">
         <div class="container">
@@ -99,6 +132,13 @@
                                               :class="{'is-valid': isDescValid, 'is-invalid': formData.deskripsi.length > 0 && !isDescValid}"
                                               x-model="formData.deskripsi" placeholder="Jelaskan detail masalah..."></textarea>
                                     <div class="invalid-feedback">Deskripsi terlalu singkat (min 10 karakter).</div>
+                                </div>
+
+                                <div class="alert alert-info py-2 px-3 mb-4 d-flex align-items-center small">
+                                    <i class="bi bi-shield-lock-fill me-2 fs-5"></i>
+                                    <div>
+                                        <strong>Jaminan Privasi:</strong> Data Anda dienkripsi dan hanya digunakan untuk keperluan verifikasi layanan.
+                                    </div>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary w-100 rounded-pill fw-bold py-2" 
