@@ -310,3 +310,54 @@ body.dark-mode .hover-lift:hover {
         transform: none; /* Disable lift on touch devices to prevent sticky hover states */
     }
 }
+/* Responsive Navbar Polish */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-height: 80vh; /* Scrollable if too long */
+        overflow-y: auto;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+        font-weight: 500;
+    }
+
+    /* Target the CTA button inside collapse */
+    .navbar-collapse > .btn {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0 !important; /* Override ms-lg-2 */
+    }
+
+    /* Theme toggle positioning on mobile */
+    .theme-toggle {
+        justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-link.active {
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0; /* Or center? Start with left-aligned or default link style */
+        width: 100%;
+        height: 2px;
+        background-color: white; /* Active indicator */
+        border-radius: 2px;
+    }
+}
