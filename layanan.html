@@ -44,7 +44,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="bg-light py-5">
+    <div class="bg-light py-5 animate-fade-in-up">
         <div class="container text-center">
             <h1 class="fw-bold mb-3">Layanan Pengaduan & Bantuan</h1>
             <p class="text-muted w-75 mx-auto">Sampaikan kebutuhan atau masalah sosial di lingkungan Anda. Kami siap membantu menghubungkan dengan solusi yang tepat.</p>
@@ -90,8 +90,8 @@
             <div class="row g-5">
                 
                 <!-- Form Section -->
-                <div class="col-lg-5" x-data="serviceForm">
-                    <div class="card border-0 shadow-lg overflow-hidden rounded-4 h-100">
+                <div class="col-lg-5 animate-on-scroll" x-data="serviceForm">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-4 h-100 hover-shadow">
                         <div class="card-header bg-white border-0 p-4 pb-0">
                             <h4 class="fw-bold mb-0"><i class="bi bi-pencil-square me-2 text-primary"></i>Buat Pengajuan Baru</h4>
                         </div>
@@ -152,7 +152,7 @@
                 </div>
 
                 <!-- History Section -->
-                <div class="col-lg-7" x-data="requestHistory">
+                <div class="col-lg-7 animate-on-scroll delay-200" x-data="requestHistory">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h4 class="fw-bold mb-0">Riwayat Pengajuan Saya</h4>
                         <span class="badge bg-primary rounded-pill" x-text="$store.requests.items.length + ' Total'"></span>

@@ -184,3 +184,32 @@ document.addEventListener('alpine:init', () => {
         }
     }));
 });
+
+// Scroll Animation Observer
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    // Initial check and observe
+    const initObserver = () => {
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(el => observer.observe(el));
+    };
+
+    initObserver();
+    
+    // Re-run for dynamic content (Alpine) if needed
+    // In a real app we might need a MutationObserver, but for now this covers static content
+});

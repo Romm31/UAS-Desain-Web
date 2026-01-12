@@ -45,7 +45,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="bg-light py-5">
+    <div class="bg-light py-5 animate-fade-in-up">
         <div class="container text-center">
             <h1 class="fw-bold mb-3">Daftar Program Sosial</h1>
             <p class="text-muted w-75 mx-auto">Kami menyediakan berbagai program bantuan sosial yang dirancang untuk meningkatkan kesejahteraan masyarakat di berbagai sektor.</p>
@@ -75,8 +75,8 @@
             <!-- Program Grid -->
             <div class="row g-4">
                 <template x-for="program in filteredPrograms" :key="program.id">
-                    <div class="col-md-6 col-lg-4" x-transition.duration.500ms>
-                        <div class="card card-program shadow-sm h-100">
+                    <div class="col-md-6 col-lg-4 animate-on-scroll" x-transition.duration.500ms>
+                        <div class="card card-program shadow-sm h-100 hover-lift">
                             <div class="overflow-hidden" style="height: 200px;">
                                 <img :src="program.image" class="card-img-top w-100 h-100 object-fit-cover" :alt="program.title">
                             </div>
