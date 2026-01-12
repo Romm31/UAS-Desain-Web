@@ -71,7 +71,7 @@ document.addEventListener('alpine:init', () => {
                 title: 'Beasiswa Indonesia Maju',
                 category: 'Pendidikan',
                 description: 'Dukungan biaya pendidikan penuh bagi siswa berprestasi dari keluarga kurang mampu.',
-                image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
             },
             {
                 id: 3,
