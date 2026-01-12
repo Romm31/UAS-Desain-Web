@@ -82,8 +82,120 @@ main {
 }
 
 footer {
-  background-color: #212529;
-  color: white;
-  padding: 3rem 0;
-  margin-top: auto;
+    background-color: #212529;
+    color: white;
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+/* Dark Mode Styles */
+:root {
+    --bg-light: #f8f9fa;
+    --bg-dark: #212529;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #2b3035;
+}
+
+body {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1e21 !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: #2b3035 !important;
+}
+
+body.dark-mode .card, 
+body.dark-mode .list-group-item,
+body.dark-mode .modal-content {
+    background-color: var(--card-bg-dark);
+    border-color: #495057;
+    color: var(--text-light);
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #495057;
+}
+
+body.dark-mode .text-muted {
+    color: #adb5bd !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #212529;
+    border-color: #495057;
+    color: white;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #6c757d;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body.dark-mode .table {
+    color: var(--text-light);
+    border-color: #495057;
+}
+
+/* Hard Overrides for Bootstrap Utilities */
+body.dark-mode .bg-white {
+    background-color: var(--card-bg-dark) !important;
+    color: var(--text-light);
+}
+
+body.dark-mode .text-dark {
+    color: var(--text-light) !important;
+}
+
+/* Input Group Addons */
+body.dark-mode .input-group-text {
+    background-color: #212529;
+    color: var(--text-light);
+    border-color: #495057;
+}
+
+/* Dropdowns */
+body.dark-mode .dropdown-menu {
+    background-color: var(--card-bg-dark);
+    border-color: #495057;
+}
+
+body.dark-mode .dropdown-item {
+    color: var(--text-light);
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item:focus {
+    background-color: #495057;
+    color: white;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
