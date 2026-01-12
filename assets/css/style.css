@@ -361,3 +361,36 @@ body.dark-mode .hover-lift:hover {
         border-radius: 2px;
     }
 }
+
+/* About Page Hero */
+.page-header-about {
+    background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(33, 37, 41, 0.9)),
+    url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    margin-bottom: 2rem;
+}
+
+/* Program Page Hero */
+.page-header-program {
+    background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(33, 37, 41, 0.9)),
+    url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    margin-bottom: 2rem;
+}
+
+/* Service Page Hero */
+.page-header-service {
+    background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(33, 37, 41, 0.9)),
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    margin-bottom: 2rem;
+}
